@@ -35,3 +35,14 @@ while True:
 		print("bot says: ",bot)
 		client.send(Message(text=bot), thread_id=user.uid,thread_type=ThreadType.USER)
 	time.sleep(5)
+	
+'''
+#p=format(client.uid)
+#print(format(client.uid))
+for i in range (0,1):
+	user = client.searchForUsers(input())[0]
+	print("user ID: {}".format(user.uid))
+	print("user's name: {}".format(user.name))
+	#print("user's photo: {}".format(user.photo))
+	print("Is user client's friend: {}".format(user.is_friend))
+'''
