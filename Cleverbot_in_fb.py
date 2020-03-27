@@ -8,7 +8,7 @@ cb = cleverbotfree.cbfree.Cleverbot()
 client=Client('yamin136635@gmail.com', 'yamin02')
 client.isLoggedIn()
 print(format(client.uid))
-user = client.searchForUsers(input())[0]
+user = client.searchForUsers(input("With whom to chat:"))[0]
 print("user's name: {}".format(user.name))
 #messages = client.fetchThreadMessages(thread_id= '100007704161328', limit=1)
 #for message in messages:
